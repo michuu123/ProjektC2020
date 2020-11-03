@@ -10,3 +10,5 @@ Rozbudowę projektu planuję rozłożyć na trzy fazy:
 - Faza trzecia zakłada dodanie dodatkowej funkcjonalności w postaci manipulacji źródłem światła, oraz/lub innych ciekawych funkcjonalności
 ## Efekt końcowy
 Finalnie program będzie sprawnym silnikiem 3D, którego zasada działania opierać się będzie na rysowaniu dwuwymiarowych wielokątów, których rozmiary, kąty, jak i barwa, a przez to światłocień obliczane będą przez odpowiednie stworzone przeze mnie algorytmy tworząc tym samym złudzenie trójwymiarowości 
+## Raport I
+Zrealizowana została pierwsza faza, niestety do całkowitego sfinalizowania przyjętych założeń zabrakło możliwości obrotu w osi poziomej. Brak tej funkcjonalności zostanie jednak rozwiązany w przyszłości poprzez całkowitą zmianę mechaniki tworzenia obiektów. Ponad to przy tworzeniu udało mi się zebrać niezbędną wiedzę z zakresu trygonometrii brył przestrzennych, która z pewnością ułatwi realizację kolejnych założeń
