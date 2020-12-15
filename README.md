@@ -17,4 +17,4 @@ Po spostrzeżeniach poczynionych podczas pierwszej fazy projektu silnik uległ c
 ## Raport III
 Pomimo wielu wieczorów spędzonych na próbie opracowania odpowiednich funkcji trygonometrycznych kontrolujących położenie punktów nie ma na tym polu dużych sukcesów. System sferyczny został poprawiony względem poprzedniego raportu (poprzedni system opierał się na dwóch kontach oraz osobnej odległości od osi x oraz osobnej od osi y, co było błędem) sama oś x obraca się w sposób prawidłowy, problemem jest jednak oś y
 ## Raport IV
-Ponownie zmieniono system obliczania współrzędnych poszczególnych punktów, wciąż nie działa on jednak tak jak powinien, możliwym jest iż pomimo wszelkich starań założenia przyjęte na początku projektu nie zostaną zrealizowane, mimo wszystko program wciąż będzie rozwijany celem zarzegnania obecnego kryzysu
+Ponownie zmieniono system obliczania współrzędnych poszczególnych punktów, wciąż nie działa on jednak tak jak powinien, możliwym jest iż pomimo wszelkich starań założenia przyjęte na początku projektu nie zostaną zrealizowane, mimo wszystko program wciąż będzie rozwijany celem zażegnania obecnego kryzysu
