@@ -124,7 +124,7 @@ public:
 			}
 			
 		}
-		if (typ == 1)
+		if (typ == 3)
 		{
 			for (int i = 0; i < 6; i++)
 			{
@@ -173,7 +173,7 @@ public:
 			sciany[5].setFillColor(sf::Color(rand() % 255, rand() % 255, rand() % 255, 100));
 			window.draw(sciany[5]);
 		}
-		if (typ == 2)
+		if (typ == 1)
 		{
 			for (int i = 0; i < 6; i++)
 			{
@@ -239,6 +239,56 @@ public:
 			window.draw(sciany[5]);
 		}
 
+		if (typ == 2)
+		{
+			for (int i = 0; i < 6; i++)
+			{
+				sciany[i].setPointCount(4);
+				sciany[i].setOutlineThickness(0);
+			}
+			sciany[0].setPoint(0, sf::Vector2f(sin(3.1415 * (x + wsp[1].a) / 180) * wsp[1].c + 960, sin(3.1415 * (y + wsp[1].b) / 180) * wsp[1].c + 540));
+			sciany[0].setPoint(1, sf::Vector2f(sin(3.1415 * (x + wsp[2].a) / 180) * wsp[2].c + 960, sin(3.1415 * (y + wsp[2].b) / 180) * wsp[2].c + 540));
+			sciany[0].setPoint(2, sf::Vector2f(sin(3.1415 * (x + wsp[6].a) / 180) * wsp[6].c + 960, sin(3.1415 * (y + wsp[6].b) / 180) * wsp[6].c + 540));
+			sciany[0].setPoint(3, sf::Vector2f(sin(3.1415 * (x + wsp[5].a) / 180) * wsp[5].c + 960, sin(3.1415 * (y + wsp[5].b) / 180) * wsp[5].c + 540));
+			sciany[0].setFillColor(sf::Color(0, 200, 200, 100));
+			window.draw(sciany[0]);
+
+			sciany[1].setPoint(0, sf::Vector2f(sin(3.1415 * (x + wsp[2].a) / 180) * wsp[2].c + 960, sin(3.1415 * (y + wsp[2].b) / 180) * wsp[2].c + 540));
+			sciany[1].setPoint(1, sf::Vector2f(sin(3.1415 * (x + wsp[3].a) / 180) * wsp[3].c + 960, sin(3.1415 * (y + wsp[3].b) / 180) * wsp[3].c + 540));
+			sciany[1].setPoint(2, sf::Vector2f(sin(3.1415 * (x + wsp[7].a) / 180) * wsp[7].c + 960, sin(3.1415 * (y + wsp[7].b) / 180) * wsp[7].c + 540));
+			sciany[1].setPoint(3, sf::Vector2f(sin(3.1415 * (x + wsp[6].a) / 180) * wsp[6].c + 960, sin(3.1415 * (y + wsp[6].b) / 180) * wsp[6].c + 540));
+			sciany[1].setFillColor(sf::Color(0, 255, 100, 100));
+			window.draw(sciany[1]);
+
+			sciany[2].setPoint(0, sf::Vector2f(sin(3.1415 * (x + wsp[0].a) / 180) * wsp[0].c + 960, sin(3.1415 * (y + wsp[0].b) / 180) * wsp[0].c + 540));
+			sciany[2].setPoint(1, sf::Vector2f(sin(3.1415 * (x + wsp[1].a) / 180) * wsp[1].c + 960, sin(3.1415 * (y + wsp[1].b) / 180) * wsp[1].c + 540));
+			sciany[2].setPoint(2, sf::Vector2f(sin(3.1415 * (x + wsp[5].a) / 180) * wsp[5].c + 960, sin(3.1415 * (y + wsp[5].b) / 180) * wsp[5].c + 540));
+			sciany[2].setPoint(3, sf::Vector2f(sin(3.1415 * (x + wsp[4].a) / 180) * wsp[4].c + 960, sin(3.1415 * (y + wsp[4].b) / 180) * wsp[4].c + 540));
+			sciany[2].setFillColor(sf::Color(0,255,150,100));
+			window.draw(sciany[2]);
+
+			sciany[3].setPoint(0, sf::Vector2f(sin(3.1415 * (x + wsp[3].a) / 180) * wsp[3].c + 960, sin(3.1415 * (y + wsp[3].b) / 180) * wsp[3].c + 540));
+			sciany[3].setPoint(1, sf::Vector2f(sin(3.1415 * (x + wsp[0].a) / 180) * wsp[0].c + 960, sin(3.1415 * (y + wsp[0].b) / 180) * wsp[0].c + 540));
+			sciany[3].setPoint(2, sf::Vector2f(sin(3.1415 * (x + wsp[4].a) / 180) * wsp[4].c + 960, sin(3.1415 * (y + wsp[4].b) / 180) * wsp[4].c + 540));
+			sciany[3].setPoint(3, sf::Vector2f(sin(3.1415 * (x + wsp[7].a) / 180) * wsp[7].c + 960, sin(3.1415 * (y + wsp[7].b) / 180) * wsp[7].c + 540));
+			sciany[3].setFillColor(sf::Color(0,100,255,100));
+			window.draw(sciany[3]);
+
+			sciany[4].setPoint(0, sf::Vector2f(sin(3.1415 * (x + wsp[0].a) / 180) * wsp[0].c + 960, sin(3.1415 * (y + wsp[0].b) / 180) * wsp[0].c + 540));
+			sciany[4].setPoint(1, sf::Vector2f(sin(3.1415 * (x + wsp[1].a) / 180) * wsp[1].c + 960, sin(3.1415 * (y + wsp[1].b) / 180) * wsp[1].c + 540));
+			sciany[4].setPoint(2, sf::Vector2f(sin(3.1415 * (x + wsp[2].a) / 180) * wsp[2].c + 960, sin(3.1415 * (y + wsp[2].b) / 180) * wsp[2].c + 540));
+			sciany[4].setPoint(3, sf::Vector2f(sin(3.1415 * (x + wsp[3].a) / 180) * wsp[3].c + 960, sin(3.1415 * (y + wsp[3].b) / 180) * wsp[3].c + 540));
+			sciany[4].setFillColor(sf::Color(0,230,200,100));
+			window.draw(sciany[4]);
+
+			sciany[5].setPoint(0, sf::Vector2f(sin(3.1415 * (x + wsp[4].a) / 180) * wsp[4].c + 960, sin(3.1415 * (y + wsp[4].b) / 180) * wsp[4].c + 540));
+			sciany[5].setPoint(1, sf::Vector2f(sin(3.1415 * (x + wsp[5].a) / 180) * wsp[5].c + 960, sin(3.1415 * (y + wsp[5].b) / 180) * wsp[5].c + 540));
+			sciany[5].setPoint(2, sf::Vector2f(sin(3.1415 * (x + wsp[6].a) / 180) * wsp[6].c + 960, sin(3.1415 * (y + wsp[6].b) / 180) * wsp[6].c + 540));
+			sciany[5].setPoint(3, sf::Vector2f(sin(3.1415 * (x + wsp[7].a) / 180) * wsp[7].c + 960, sin(3.1415 * (y + wsp[7].b) / 180) * wsp[7].c + 540));
+			sciany[5].setFillColor(sf::Color(0,150,150,100));
+			window.draw(sciany[5]);
+		}
+
 //		cout << y << endl;
 
 		/*	sciany[0].setPoint(0, sf::Vector2f(sin(3.1415 * (x + wsp[0].a) / 180) * wsp[0].c1 + 300, sin(3.1415 * (y + wsp[0].b) / 180) * wsp[0].c2 + 300));
@@ -271,34 +321,68 @@ public:
 };
 int main()
 {
-	
+	sf::Texture xm;
+	xm.loadFromFile("Xdown.png");
+	sf::Sprite xM;
+	xM.setTexture(xm);
+
+	sf::Texture xw;
+	xw.loadFromFile("Xup.png");
+	sf::Sprite xW;
+	xW.setTexture(xw);
+
+	sf::Texture ym;
+	ym.loadFromFile("Ydown.png");
+	sf::Sprite yM;
+	yM.setTexture(ym);
+
+	sf::Texture yw;
+	yw.loadFromFile("Yup.png");
+	sf::Sprite yW;
+	yW.setTexture(yw);
+
+	sf::Texture zm;
+	zm.loadFromFile("Zdown.png");
+	sf::Sprite zM;
+	zM.setTexture(zm);
+
+	sf::Texture zw;
+	zw.loadFromFile("Zup.png");
+	sf::Sprite zW;
+	zW.setTexture(zw);
+
+	sf::Texture punkty;
+	punkty.loadFromFile("punkty.png");
+	sf::Texture szkielet;
+	szkielet.loadFromFile("szkielet.png");
+	sf::Texture pelne;
+	pelne.loadFromFile("pelne.png");
+	sf::Texture disco;
+	disco.loadFromFile("disco.png");
+	sf::Sprite render;
+	render.setTexture(punkty);
+
+
 	srand(time(NULL));
 	float cos[3] = { -100,-100,-100 }, cos1[3] = { 200,200,200 };
 	szescian bk(cos, cos1);
 	sf::Mouse mouse;
 	int myszX = 0, myszY = 0, przsX, przsY, katX = 0, katXp = 0, katY = 0, katYp = 0, renderType=0;
-	sf::RectangleShape render(sf::Vector2f(120, 50));
 	render.setPosition(sf::Vector2f(50, 50));
-	render.setFillColor(sf::Color(50,50, 50, 255));
+	render.setColor(sf::Color(50,50, 50, 255));
 
-	sf::RectangleShape xW(sf::Vector2f(50, 50));
 	xW.setPosition(sf::Vector2f(120, 120));
-	xW.setFillColor(sf::Color(50, 50, 50, 255));
-	sf::RectangleShape xM(sf::Vector2f(50, 50));
+	xW.setColor(sf::Color(50, 50, 50, 255));
 	xM.setPosition(sf::Vector2f(50, 120));
-	xM.setFillColor(sf::Color(50, 50, 50, 255));
-	sf::RectangleShape yW(sf::Vector2f(50, 50));
+	xM.setColor(sf::Color(50, 50, 50, 255));
 	yW.setPosition(sf::Vector2f(120, 190));
-	yW.setFillColor(sf::Color(50, 50, 50, 255));
-	sf::RectangleShape yM(sf::Vector2f(50, 50));
+	yW.setColor(sf::Color(50, 50, 50, 255));
 	yM.setPosition(sf::Vector2f(50, 190));
-	yM.setFillColor(sf::Color(50, 50, 50, 255));
-	sf::RectangleShape zW(sf::Vector2f(50, 50));
+	yM.setColor(sf::Color(50, 50, 50, 255));
 	zW.setPosition(sf::Vector2f(120, 260));
-	zW.setFillColor(sf::Color(50, 50, 50, 255));
-	sf::RectangleShape zM(sf::Vector2f(50, 50));
+	zW.setColor(sf::Color(50, 50, 50, 255));
 	zM.setPosition(sf::Vector2f(50, 260));
-	zM.setFillColor(sf::Color(50, 50, 50, 255));
+	zM.setColor(sf::Color(50, 50, 50, 255));
 
 	bool guzik;
 	float pi = 3.1415;
@@ -349,14 +433,23 @@ int main()
 					myszY = mouse.getPosition(window).y;
 					if ((mouse.getPosition(window).x > 50) && (mouse.getPosition(window).x < 170) && (mouse.getPosition(window).y < 100) && (mouse.getPosition(window).y > 50))
 					{
-						render.setFillColor(sf::Color(150, 150, 150, 255));
+						render.setColor(sf::Color(150, 150, 150, 255));
 						renderType += 1;
-						renderType %= 3;
+						renderType %= 4;
+						if(renderType==0)
+							render.setTexture(punkty);
+						if (renderType == 1)
+							render.setTexture(szkielet);
+						if (renderType == 2)
+							render.setTexture(pelne);
+						if (renderType == 3)
+							render.setTexture(disco);
+
 					}
 				}
 				if ((mouse.getPosition(window).x > 50) && (mouse.getPosition(window).x < 100) && (mouse.getPosition(window).y > 120) && (mouse.getPosition(window).y < 170))
 				{
-					xM.setFillColor(sf::Color(150, 150, 150, 255));
+					xM.setColor(sf::Color(150, 150, 150, 255));
 					cos1[0] -= 10;
 					bk.metoda(cos, cos1);
 				}
@@ -364,7 +457,7 @@ int main()
 
 				if ((mouse.getPosition(window).x > 120) && (mouse.getPosition(window).x < 170) && (mouse.getPosition(window).y > 120) && (mouse.getPosition(window).y < 170))
 				{
-					xW.setFillColor(sf::Color(150, 150, 150, 255));
+					xW.setColor(sf::Color(150, 150, 150, 255));
 					cos1[0] += 10;
 					bk.metoda(cos, cos1);
 				}
@@ -372,7 +465,7 @@ int main()
 
 				if ((mouse.getPosition(window).x > 50) && (mouse.getPosition(window).x < 100) && (mouse.getPosition(window).y > 190) && (mouse.getPosition(window).y < 240))
 				{
-					yM.setFillColor(sf::Color(150, 150, 150, 255));
+					yM.setColor(sf::Color(150, 150, 150, 255));
 					cos1[1] -= 10;
 					bk.metoda(cos, cos1);
 				}
@@ -455,11 +548,11 @@ int main()
 		{
 			if (mouse.isButtonPressed(mouse.Left));
 			else
-				render.setFillColor(sf::Color(100, 100, 100, 255));
+				render.setColor(sf::Color(100, 100, 100, 255));
 		}
 		else
 		{
-			render.setFillColor(sf::Color(50, 50, 50, 255));
+			render.setColor(sf::Color(50, 50, 50, 255));
 		}
 		
 
@@ -467,11 +560,11 @@ int main()
 		{
 			if (mouse.isButtonPressed(mouse.Left));
 			else
-				xM.setFillColor(sf::Color(100, 100, 100, 255));
+				xM.setColor(sf::Color(100, 100, 100, 255));
 		}
 		else
 		{
-			xM.setFillColor(sf::Color(50, 50, 50, 255));
+			xM.setColor(sf::Color(50, 50, 50, 255));
 		}
 		
 
@@ -479,11 +572,11 @@ int main()
 		{
 			if (mouse.isButtonPressed(mouse.Left));
 			else
-				xW.setFillColor(sf::Color(100, 100, 100, 255));
+				xW.setColor(sf::Color(100, 100, 100, 255));
 		}
 		else
 		{
-			xW.setFillColor(sf::Color(50, 50, 50, 255));
+			xW.setColor(sf::Color(50, 50, 50, 255));
 		}
 		
 
@@ -491,11 +584,11 @@ int main()
 		{
 			if (mouse.isButtonPressed(mouse.Left));
 			else
-				yM.setFillColor(sf::Color(100, 100, 100, 255));
+				yM.setColor(sf::Color(100, 100, 100, 255));
 		}
 		else
 		{
-			yM.setFillColor(sf::Color(50, 50, 50, 255));
+			yM.setColor(sf::Color(50, 50, 50, 255));
 		}
 
 
@@ -503,11 +596,11 @@ int main()
 		{
 			if (mouse.isButtonPressed(mouse.Left));
 			else
-				yW.setFillColor(sf::Color(100, 100, 100, 255));
+				yW.setColor(sf::Color(100, 100, 100, 255));
 		}
 		else
 		{
-			yW.setFillColor(sf::Color(50, 50, 50, 255));
+			yW.setColor(sf::Color(50, 50, 50, 255));
 		}
 		
 
@@ -515,11 +608,11 @@ int main()
 		{
 			if (mouse.isButtonPressed(mouse.Left));
 			else
-				zM.setFillColor(sf::Color(100, 100, 100, 255));
+				zM.setColor(sf::Color(100, 100, 100, 255));
 		}
 		else
 		{
-			zM.setFillColor(sf::Color(50, 50, 50, 255));
+			zM.setColor(sf::Color(50, 50, 50, 255));
 		}
 
 
@@ -527,11 +620,11 @@ int main()
 		{
 			if (mouse.isButtonPressed(mouse.Left));
 			else
-				zW.setFillColor(sf::Color(100, 100, 100, 255));
+				zW.setColor(sf::Color(100, 100, 100, 255));
 		}
 		else
 		{
-			zW.setFillColor(sf::Color(50, 50, 50, 255));
+			zW.setColor(sf::Color(50, 50, 50, 255));
 		}
 
 		// czyszczenie (na czarno)  
@@ -546,6 +639,7 @@ int main()
 		window.draw(yM);
 		window.draw(zW);
 		window.draw(zM);
+		
 
 
 	}
